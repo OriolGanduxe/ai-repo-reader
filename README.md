@@ -8,14 +8,10 @@
 - What are embeddings? [TO DO: link something about embeddings]
 - What is Pinecone? A vector database and search engine [TO DO: link about vector database]
 
-## Prepare data
-- Download Alice in Wonderland text
-```
-mkdir data
-curl https://www.gutenberg.org/cache/epub/11/pg11.txt > data/alice.txt
-```
+### Get started
+Follow instructions in `example/notebook.ipynb`
 
-## Prepare environment
+### Prepare environment
 
 [pyenv](https://realpython.com/intro-to-pyenv/) makes it easy to manage python versions without conflicts
 
@@ -54,20 +50,13 @@ pipenv install jupyterlab
 pipenv shell
 ```
 
-- Install dependencies
-```
-!pip install langchain 
-!pip install openai
-!pip install pinecone-client
-!pip install tiktoken
-```
-
 - Start jupyterlab
 ```
 jupyter lab
 ```
 
-A browser window should open with the jupyterlab interface. The source code is under `noterbook.ipynb`
+A browser window should open with the jupyterlab interface. The source code is under `example/notebook.ipynb`
+Tip: You can also run the notebook in VSCode, using the [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 
 ## Resources
 - Tutorial: https://www.mlq.ai/gpt-3-enabled-research-assistant-langchain-pinecone/
