@@ -1,0 +1,5 @@
+# Commit without the outputs of jupyter notebook 
+# NB: run the following to add  filter to git config, inside the repo
+# `git config filter.strip-notebook-output.clean 'jupyter nbconvert --ClearOutputPreprocessor.enabled=True --to=notebook --stdin --stdout --log-level=ERROR'`
+*.ipynb filter=strip-notebook-output  
+
